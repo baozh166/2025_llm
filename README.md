@@ -11,7 +11,7 @@ The example dataset is a **medical QA corpus**, and the code shows how to embed,
 - ✅ **Fast retrieval** from Qdrant for semantic (vector) search  
 - ✅ **Simple RAG entrypoint** (`main.py` + `run_test.sh`)
 - ✅ **Medical_LLM-RAG.ipynb** identified vector search is better than keyword retrieval method, and the "gpt-oss-120b" model is better than "llama-3.3-70b-instruct"
-- 
+- ✅ **UF NaviGator toolkit** to limit the cost
 ---
 
 
