@@ -56,7 +56,7 @@ The example dataset is a **medical QA corpus**, and the code shows how to embed,
 ### 2. Python packages
 Install dependencies:
 ```bash
-pip install pandas qdrant-client jina
+pip install pandas qdrant-client jina openai dotenv
 ```
 ---
 
