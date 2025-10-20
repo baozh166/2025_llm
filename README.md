@@ -22,17 +22,17 @@ The example dataset is a **medical QA corpus**, and the code shows how to embed,
 │           Data + Vector Pipeline             │               │              Execution Layer                 │
 ├──────────────────────────────────────────────┤               ├──────────────────────────────────────────────┤
 │                                              │               │                                              │
-│  📁 data/medquad.csv                         │               │  📁 medical_QA/main.py                        │
+│  📁 data/medquad.csv                        │               │  📁 medical_QA/main.py                        │
 │  ├─ Raw medical QA data                      │               │  ├─ Parses query argument                     │
 │                                              │               │  ├─ Calls rag_vec.rag()                       │
 │                                              │               │                                              │
-│  📁 medical_QA/ingest_vec.py                 │               │  📁 medical_QA/▶️ run_test.sh                 │
+│  📁 medical_QA/ingest_vec.py                │               │  📁 medical_QA/▶️ run_test.sh                 │
 │  ├─ Loads CSV data                           │               │  ├─ Test shell script                         │
 │  ├─ Starts Qdrant (Docker)                   │               │  ├─ Runs main.py with sample query            │
 │  ├─ Embeds text (Jina AI)                    │               │                                              │
 │  ├─ Uploads to Qdrant DB                     │               │                                              │
 │                                              │               │                                              │
-│  📁 medical_QA/rag_vec.py                    │               │                                              │
+│  📁 medical_QA/rag_vec.py                   │               │                                              │
 │  ├─ Vector search via Qdrant                 │               │                                              │
 │  ├─ Build prompt with retrieved context      │               │                                              │
 │  ├─ Send the built prompt to LLM             │               │                                              │
