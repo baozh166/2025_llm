@@ -44,10 +44,7 @@ The example dataset is a **medical QA corpus**, and the code shows how to embed,
                    │                        Call relationship                    │
                    └─────────────────────────────────────────────────────────────┘
 
-
-
-
----
+```
 
 ## ⚙️ Requirements
 
@@ -59,6 +56,7 @@ The example dataset is a **medical QA corpus**, and the code shows how to embed,
 Install dependencies:
 ```bash
 pip install pandas qdrant-client jina
+```
 
 ## 🧠 How It Works
 
@@ -82,6 +80,7 @@ Ensure a CSV file (e.g., `data/medquad.csv`) exists with at least these columns:
 
 ```text
 source, focus_area, answer
+```
 
 
 ### Step 2. Ingest Data
@@ -90,6 +89,7 @@ Run the ingestion script to spin up Qdrant and populate it with vectorized data:
 
 ```bash
 python3 ingest_vec.py
+```
 This script will:
 
 Pull the Qdrant Docker image (if not already available).
@@ -108,11 +108,12 @@ Once Qdrant is running and indexed, test the RAG retrieval with:
 
 ```bash
 bash run_test.sh
-
+```
 or directly
 
 ```bash
 python3 main.py --query "what is the reason to develop a lung cancer?"
+```
 This triggers the RAG process (rag_vec.rag()), which performs a semantic search against Qdrant and returns the most relevant entries.
 
 
