@@ -13,7 +13,6 @@ The example dataset is a **medical QA corpus**, and the code shows how to embed,
 
 ---
 
-## 🧩 Architecture Overview
 
 ## 🧭 Architecture Overview
 
