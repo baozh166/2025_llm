@@ -9,8 +9,9 @@ The example dataset is a **medical QA corpus**, and the code shows how to embed,
 - ✅ **Automated Qdrant setup** (runs a Docker container if not running)  
 - ✅ **Vector ingestion** with local embeddings (`jinaai/jina-embeddings-v2-small-en`)  
 - ✅ **Fast retrieval** from Qdrant for semantic (vector) search  
-- ✅ **Simple RAG entrypoint** (`main.py` + `run_test.sh`)  
-
+- ✅ **Simple RAG entrypoint** (`main.py` + `run_test.sh`)
+- ✅ **Medical_LLM-RAG.ipynb** identified vector search is better than keyword retrieval method, and the "gpt-oss-120b" model is better than "llama-3.3-70b-instruct"
+- 
 ---
 
 
@@ -44,6 +45,7 @@ The example dataset is a **medical QA corpus**, and the code shows how to embed,
                    └─────────────────────────────────────────────────────────────┘
 
 ```
+---
 
 ## ⚙️ Requirements
 
@@ -56,6 +58,7 @@ Install dependencies:
 ```bash
 pip install pandas qdrant-client jina
 ```
+---
 
 ## 🧠 How It Works
 
@@ -70,6 +73,8 @@ pip install pandas qdrant-client jina
 
 3. **Testing (`run_test.sh`)**
    - Example single query run for smoke testing.
+
+---
 
 ## 🚀 Quick Start
 
