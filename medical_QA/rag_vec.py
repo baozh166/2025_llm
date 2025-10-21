@@ -11,7 +11,7 @@ client_hpg = OpenAI(
     base_url="https://api.ai.it.ufl.edu" # LiteLLM Proxy is OpenAI compatible, Read More: https://docs.litellm.ai/docs/proxy/user_keys
 )
 
-client_q, model_handle = ingest_vec.load_index(collection_name = "medicalQA-rag1020")
+client_q, model_handle = ingest_vec.load_index()
 
 def search_vec(query, collection_name = "medicalQA-rag1020"):
 
