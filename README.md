@@ -1,7 +1,7 @@
 <img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/3f4a2b8b-7f12-4ae3-9b31-4b9e63a011ef" />
 
 
-# 🧠 2025_LLM — Lightweight Local RAG with Qdrant
+# 🧠 Medical Q&A RAG Chatbot
 
 This repository demonstrates a **Retrieval-Augmented Generation (RAG)** pipeline using a local **Qdrant vector database** to index and query text documents.  
 The example dataset is a **medical QA corpus**, and the code shows how to embed, store, and retrieve context vectors to power a simple RAG workflow.
