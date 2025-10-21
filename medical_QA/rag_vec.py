@@ -8,7 +8,7 @@ load_dotenv()
 
 client_hpg = OpenAI(
     api_key=os.environ['HPG_API_KEY'],
-    base_url="https://api.ai.it.ufl.edu" # LiteLLM Proxy is OpenAI compatible, Read More: https://docs.litellm.ai/docs/proxy/user_keys
+    base_url="https://api.ai.it.ufl.edu" # UF Navigator Toolkit
 )
 
 client_q, model_handle = ingest_vec.load_index()
